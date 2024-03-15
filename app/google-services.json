@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "896038363597",
+    "project_id": "fda-cordinate-withh-changes",
+    "storage_bucket": "fda-cordinate-withh-changes.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:896038363597:android:fd1e1721ca05324c6a6484",
+        "android_client_info": {
+          "package_name": "com.example.fdacordinatechanges"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "896038363597-7klmtp77n0v4nct7sgvhiepicqdb1t71.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDKkPW2q0X-7dnwiBUy3iL3ZAjarH335_g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "896038363597-7klmtp77n0v4nct7sgvhiepicqdb1t71.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:896038363597:android:2c8e3deacf451fc66a6484",
+        "android_client_info": {
+          "package_name": "com.example.fooddeliveryappone"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "896038363597-7klmtp77n0v4nct7sgvhiepicqdb1t71.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDKkPW2q0X-7dnwiBUy3iL3ZAjarH335_g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "896038363597-7klmtp77n0v4nct7sgvhiepicqdb1t71.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

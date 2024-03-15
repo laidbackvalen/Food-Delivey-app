@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FBAF03"
+    tools:context=".MainActivity3">
+
+    <TextView
+        android:id="@+id/eat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/inter_bold"
+        android:paddingStart="10dp"
+        android:text="What would \nyou like to Eat \ntoday?"
+        android:textColor="#FFFFFF"
+        android:textSize="28sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="25dp"
+        android:layout_height="27dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/eat"
+        app:layout_constraintEnd_toStartOf="@+id/imageView4"
+        app:layout_constraintTop_toTopOf="@+id/eat"
+        app:layout_constraintVertical_bias="0.548"
+        app:srcCompat="@drawable/user" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/icon__setting" />
+
+    <HorizontalScrollView
+        android:id="@+id/horizontalScrollView"
+        android:layout_width="0dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="10dp"
+        android:fillViewport="true"
+        android:fitsSystemWindows="true"
+        android:scrollbars="none"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/eat">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout2"
+            android:layout_width="0dp"
+            android:layout_height="56dp"
+            android:layout_gravity="center">
+
+            <Button
+                android:id="@+id/africans"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginStart="260dp"
+                android:scrollbarSize="10dp"
+                android:text="Africans"
+                android:backgroundTint="@color/white"
+                android:textColor="@color/black"
+                android:fontFamily="@font/inter_bold"
+                app:layout_constraintBottom_toBottomOf="@id/constraintLayout2"
+                app:layout_constraintEnd_toStartOf="@id/asians"
+                app:layout_constraintStart_toStartOf="@id/constraintLayout2"
+                app:layout_constraintTop_toTopOf="@id/constraintLayout2" />
+
+            <Button
+                android:id="@+id/asians"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:layout_marginEnd="20dp"
+                android:text="Asians"
+                android:fontFamily="@font/inter_bold"
+                android:backgroundTint="@color/white"
+                android:textColor="@color/black"
+                app:layout_constraintBottom_toBottomOf="@id/africans"
+                app:layout_constraintEnd_toStartOf="@id/italian"
+                app:layout_constraintStart_toEndOf="@id/africans"
+                app:layout_constraintTop_toTopOf="@+id/africans" />
+
+            <Button
+                android:id="@+id/italian"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:layout_marginEnd="20dp"
+                android:text="Italian"
+                android:fontFamily="@font/inter_bold"
+                android:backgroundTint="@color/white"
+                android:textColor="@color/black"
+                app:layout_constraintBottom_toBottomOf="@id/asians"
+                app:layout_constraintEnd_toStartOf="@id/specials"
+                app:layout_constraintStart_toEndOf="@id/asians"
+                app:layout_constraintTop_toTopOf="@id/asians" />
+
+            <Button
+                android:id="@+id/specials"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:layout_marginEnd="20dp"
+                android:text="Specials"
+                android:fontFamily="@font/inter_bold"
+                android:backgroundTint="@color/white"
+                android:textColor="@color/black"
+                app:layout_constraintBottom_toBottomOf="@id/italian"
+                app:layout_constraintEnd_toStartOf="@id/japanese"
+                app:layout_constraintStart_toEndOf="@id/italian"
+                app:layout_constraintTop_toTopOf="@id/italian" />
+
+            <Button
+                android:id="@+id/japanese"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:text="Japanese"
+                android:fontFamily="@font/inter_bold"
+                android:backgroundTint="@color/white"
+                android:textColor="@color/black"
+                app:layout_constraintBottom_toBottomOf="@id/specials"
+                app:layout_constraintEnd_toEndOf="@id/constraintLayout2"
+                app:layout_constraintStart_toEndOf="@id/specials"
+                app:layout_constraintTop_toTopOf="@id/specials" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </HorizontalScrollView>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        tools:context=".MainActivity"
+        android:id="@+id/linearlayout"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/buttoncat"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/horizontalScrollView"
+        app:layout_constraintVertical_bias="0.373">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="350dp"
+            android:background="@drawable/act_3_left_rect_radius_top_right_bottom_right_col_white" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="300dp"
+            android:layout_height="450dp"
+            android:layout_marginStart="-20dp"
+            app:cardCornerRadius="20dp">
+
+        </androidx.cardview.widget.CardView>
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="350dp"
+            android:background="@drawable/rect_top_right_bottom_right_white_radius_20" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/buttoncat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="88dp"
+        android:backgroundTint="#FFFFFF"
+        android:fontFamily="@font/inter_bold"
+        android:text="View all categories"
+        android:textColor="#000000"
+        android:textSize="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearlayout"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
